@@ -1,0 +1,65 @@
+:root {
+  /* Declarando variavel dentro do css */
+  --vermelho: #e50914;
+  --preta: #141414;
+}
+
+* {
+  /* Zerar o css padrão da página */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* usando a variavel dinamica */
+  background: var(--preta);
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+}
+
+header .containar {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /*açinha os elementos de maneira vertical*/
+  justify-content: space-between; /* cria um espaço das tags de maneira horizontal */
+}
+
+header .logo {
+  margin-left: 5px;
+  color: var(--vermelho);
+  font-family: "Arial Black";
+  font-size: 40px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #aaa;
+  margin-right: 10px;
+}
+
+header nav a:hover {
+  /* Muda a cor quando passa o mouse */
+  color: #fff;
+}
+
+/* Serie principal */
+.serie-principal {
+  font-size: 16px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) 100%),
+    url("../img/vikings1.jpg"); /*Colocamos uma cor bem clara para destacar as letras em relação a imagem*/
+  height: 400px;
+  background-size: cover;
+  display: flex; /*Joga os elementos para padrão em linha*/
+  flex-direction: column; /* Mudamos o para coluna*/
+  justify-content: center; /*Alinha ao centro */
+  align-items: flex-start; /*os elementos começam sempre da esquerda*/
+}
+
+.serie-principal .descricao {
+  margin-bottom: 90px;
+}
+
+.titulo {
+  font-size: 40px;
+}
