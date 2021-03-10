@@ -57,9 +57,44 @@ header nav a:hover {
 }
 
 .serie-principal .descricao {
+  margin-top: 10px;
   margin-bottom: 90px;
 }
 
 .titulo {
+  margin-top: 15%;
   font-size: 40px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.botao {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  padding: 15px 30px; /*lida com o espaço interno do elemento , quando passa apenas um valor ele atrinui o mesmo para todos os lados*/
+  margin-right: 15px; /*separa os botoes*/
+  font-size: 12px; /*tamanho da font*/
+  cursor: pointer; /*muda o cursor do mouse para identificar que é um click*/
+  transition: 3s ease all; /*Cuida da transição entre uma animação ou outra*/
+}
+
+.botao:hover {
+  background-color: white;
+  color: black;
+}
+
+.botao i {
+  margin-right: 8px;
+}
+.containar {
+  margin-left: 20px;
+}
+
+.serie-principal .containar {
+  width: 70%; /*limitação de largura*/
+}
+
+.box-serie {
+  display: block;
 }
